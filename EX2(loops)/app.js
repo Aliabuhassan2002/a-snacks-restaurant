@@ -1,11 +1,16 @@
 ///////////////////
 const name=prompt("Enter Your name please : ");
-let Gender=prompt("Enter your gender please");
-if (Gender!="male" && Gender!="female") {
+function Gender_question(){
+
+    let Gender=prompt("Enter your gender please");
+    return Gender;
+}
+let Ge=Gender_question();
+if (Ge!="male" && Ge!="female") {
     let i=0;
     while(i>-1){
-        Gender=prompt("Your gender is invalid, please enter it again : ");
-        if(Gender=="male" || Gender=="female")
+        Ge=prompt("Your gender is invalid, please enter it again : ");
+        if(Ge=="male" || Ge=="female")
             break;
         else{
             continue;
@@ -13,11 +18,11 @@ if (Gender!="male" && Gender!="female") {
     }
     
 }
-if(Gender=="male"){
+if(Ge=="male"){
     alert(`Hello Mr. ${ name}`);
 
 }
-else if(Gender=="female"){
+else if(Ge=="female"){
     alert(`Hello Ms. ${ name}`);
 
 }
@@ -47,3 +52,8 @@ for (let i =0 ; i <=s ; i++) {
 }
 
 alert(`Your sum is : ${sum}`);
+//////////////////EX3
+let answers=[name,Gender,ord];
+for(let i =0;i<=2;i++){
+    console.log(answers[i]);
+}
