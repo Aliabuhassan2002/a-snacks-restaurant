@@ -25,22 +25,7 @@ form.addEventListener("submit",
 
             
 
-const name=prompt("Enter Your name please : ");
-function Gender_question(){
-    let Gender=prompt("Enter your gender please");
-    return Gender;
-}
-let Ge=Gender_question();
-if (Ge!="male" && Ge!="female") {
-    let i=0;
-    while(i>-1){
-        Ge=prompt("Your gender is invalid, please enter it again : ");
-        if(Ge=="male" || Ge=="female")
-            break;
-        else{
-            continue;
-// >>>>>>> main
-        }
+
 
         const od_type=document.getElementById("order-type").value;
 
@@ -54,7 +39,22 @@ if (Ge!="male" && Ge!="female") {
 // eventTask
 );
 
-
+// const name=prompt("Enter Your name please : ");
+// function Gender_question(){
+//     let Gender=prompt("Enter your gender please");
+//     return Gender;
+// }
+// let Ge=Gender_question();
+// if (Ge!="male" && Ge!="female") {
+//     let i=0;
+//     while(i>-1){
+//         Ge=prompt("Your gender is invalid, please enter it again : ");
+//         if(Ge=="male" || Ge=="female")
+//             break;
+//         else{
+//             continue;
+// // >>>>>>> main
+//         }
 
 
 
