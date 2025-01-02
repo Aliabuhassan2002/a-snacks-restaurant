@@ -1,4 +1,5 @@
 ///////////////////
+//eventTask
 const form=document.getElementById("frm");
 let p=document.getElementById("para");
 form.addEventListener("submit",
@@ -23,6 +24,22 @@ form.addEventListener("submit",
             }
 
             
+
+const name=prompt("Enter Your name please : ");
+function Gender_question(){
+    let Gender=prompt("Enter your gender please");
+    return Gender;
+}
+let Ge=Gender_question();
+if (Ge!="male" && Ge!="female") {
+    let i=0;
+    while(i>-1){
+        Ge=prompt("Your gender is invalid, please enter it again : ");
+        if(Ge=="male" || Ge=="female")
+            break;
+        else{
+            continue;
+// >>>>>>> main
         }
 
         const od_type=document.getElementById("order-type").value;
@@ -34,6 +51,7 @@ form.addEventListener("submit",
         
 
     }
+// eventTask
 );
 
 
@@ -58,6 +76,51 @@ form.addEventListener("submit",
 //             continue;
 //         }
 //     }
+
+    
+}
+// if(Ge=="male"){
+//     alert(`Hello Mr. ${ name}`);
+
+// }
+// else if(Ge=="female"){
+//     alert(`Hello Ms. ${ name}`);
+
+// }
+
+
+// let ord=prompt("Let Us know what is your order, Shawerma, zinger or burger");
+// alert(`We try our best to finish the ${ord} `);
+// console.log(`Hello ${name} Your ${ord} is ready`);
+// ////////////////////////////////////////////////////////DOM EX4
+// let age=prompt("What is your age?!");
+// const em=document.getElementById("lst-id");
+// let d=document.createElement("div");
+// em.appendChild(d);
+// d.setAttribute("id","container");
+// let par=document.createElement('p');
+// let nm=document.createTextNode(name);
+// par.appendChild(nm);
+// d.appendChild(par);
+// let o=document.createElement("ol");
+// d.appendChild(o);
+// let l1=document.createElement("li");
+// let l2=document.createElement("li");
+// let l3=document.createElement("li");
+// let g=document.createTextNode(Gender);
+// l1.appendChild(g);
+// o.appendChild(l1);
+// let od=document.createTextNode(ord);
+// l2.appendChild(od);
+// o.appendChild(l2);
+// let ag=document.createTextNode(age);
+// l3.appendChild(ag);
+// o.appendChild(l3);
+
+//////////////////Q1
+// for (let i = 0; i <6; i++) {
+//     alert(i);
+//>>>>>>> main
     
 // }
 // if(Gender=="male"){
@@ -119,4 +182,17 @@ form.addEventListener("submit",
     
 // // }
 
+//<<<<<<< eventTask
 // // alert(`Your sum is : ${sum}`);
+//=======
+//<<<<<<< domTask
+// alert(`Your sum is : ${sum}`);
+//=======
+//alert(`Your sum is : ${sum}`);
+//////////////////EX3
+//let answers=[name,Gender,ord];
+//for(let i =0;i<=2;i++){
+  //  console.log(answers[i]);
+//}
+//>>>>>>> main
+//>>>>>>> main
