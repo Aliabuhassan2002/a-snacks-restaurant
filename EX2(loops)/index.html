@@ -10,7 +10,69 @@
     <div id="lst-id">
 
     </div>
-    
+    <form action="" id="frm">
+        <input type="text" placeholder="Username" id="nam"><br>
+        <input type="text" placeholder="Age" id="ag"><br>
+        <input type="text" placeholder="Gender" id="gnd"><br>
+        <input type="text" placeholder="Order type" id="order-type"><br>
+        <input type="radio" id="sha" name="d" value="Shawerma">
+        <label for="Shawerma">Shawerma</label><br>
+        <input type="radio" id="zin" name="d" value="Zinger">
+        <label for="zinger">Zinger</label><br>
+        <input type="radio" id="bur" name="d" value="Burger">
+        <label for="burger">Burger</label>
+        <input type="checkbox" id="comb" name="c" value="Combo">
+        <label for="co"> combo</label><br>
+        <input type="checkbox" id="sandw" name="c" value="sandwich">
+        <label for="san"> sandwich</label><br>
+        <button>Submit form</button>
+        
+            </form>
+
+            <p id="para"></p>
+
     <script src="app.js"></script>
 </body>
 </html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Event Example</h1>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <button>Submit</button>
+    </form>
+
+    <p id="output"></p>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>-->
+
+<!-- <script>
+    const form = document.getElementById("userForm");
+const output = document.getElementById("output");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  output.textContent = Name: ${name}, Email: ${email};
+});
+</script>  -->
